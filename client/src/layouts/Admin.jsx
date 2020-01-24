@@ -1,4 +1,8 @@
 import React from 'react';
+import '../assets/admin/css/font-awesome.min.css';
+import '../assets/admin/css/bootstrap.min.css';
+import '../assets/admin/css/paper-dashboard.css?v=2.0.0';
+
 
 const Admin = () => {
     return (
@@ -7,13 +11,9 @@ const Admin = () => {
                 <div className="sidebar" data-color="white" data-active-color="danger">
 
                     <div className="logo">
-                        <a href="http://www.creative-tim.com" className="simple-text logo-mini">
-                            <div className="logo-image-small">
-                                <img src="../assets/img/logo-small.png"/>
-                            </div>
-                        </a>
-                        <a href="http://www.creative-tim.com" className="simple-text logo-normal">
 
+                        <a href="/admin" className="simple-text logo-normal">
+                            App
                         </a>
                     </div>
                     <div className="sidebar-wrapper">
