@@ -2,14 +2,22 @@ const  express  = require('express');
 const config = require('config');
 const mongoose  = require('mongoose');
 const path  = require('path');
-
-
+const fileUpload = require('express-fileupload');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const app = express();
 
 const PORT = config.get('port')  || 5000;
-
-app.use(express.json({extended: true}));
+app.use(fileUpload());
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use('/api/auth', require('./routes/auth'));
+app.use('/admin', require('./routes/admin'));
+
+
 if(process.env.NODE_ENV === 'production'){
     app.use( '/', express.static(path.join(__dirname, 'client' , 'build')));
 
