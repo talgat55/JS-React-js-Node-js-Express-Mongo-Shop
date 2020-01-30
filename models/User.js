@@ -1,5 +1,5 @@
 const {Schema, model, Types} = require('mongoose');
-
+// TODO   end with model
 const schema = new Schema({
     email: {
         type: String,
