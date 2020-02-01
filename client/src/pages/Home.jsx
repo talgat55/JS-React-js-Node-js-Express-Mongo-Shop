@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Client from '../layouts/Client';
+import Header from '../components/client/Header/Header';
 const Home = () => {
     const ProductList = [
         {
@@ -29,9 +30,10 @@ const Home = () => {
 
     ];
     return (
-        <>
+        <Client>
+            <Header/>
             Home page
-        </>
+        </Client>
     )
 };
 
