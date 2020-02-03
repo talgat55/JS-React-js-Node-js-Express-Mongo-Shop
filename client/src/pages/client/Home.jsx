@@ -2,6 +2,7 @@ import React from 'react';
 import Client from '../../layouts/Client';
 import Header from '../../components/client/Header/Header';
 import FirstSlide from '../../components/client/FirstSlide/FirstSlide';
+import Footer from '../../components/client/Footer/Footer';
 const Home = () => {
     const ProductList = [
         {
@@ -35,6 +36,7 @@ const Home = () => {
             <Header/>
             <FirstSlide/>
             Home page
+            <Footer/>
         </Client>
     )
 };
