@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router,  Route, Switch } from "react-router-dom";
-import Home from './pages/Home';
+import Home from './pages/client/Home';
 import Admin from './layouts/Admin';
 import ProductCreate from './pages/admin/ProductCreate/ProductCreate';
 import './App.css';

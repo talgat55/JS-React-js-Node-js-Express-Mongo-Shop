@@ -3,7 +3,9 @@ html,
 body{
   font-family: 'Khula', sans-serif;
 }
-
+:root{
+    --theme-color:#F7941E;
+}
 
 .link{
   display: inline-block;

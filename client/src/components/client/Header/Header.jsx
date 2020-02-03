@@ -67,8 +67,8 @@ const Header = () => {
 };
 const HeaderComponent = styled.header`
   padding: 39px 0;
-  .header{
-    
+  box-shadow: 1px 1px #eee;
+  .header{ 
     &-main_wrap{
       position: relative;
       

@@ -1,6 +1,7 @@
 import React from 'react';
-import Client from '../layouts/Client';
-import Header from '../components/client/Header/Header';
+import Client from '../../layouts/Client';
+import Header from '../../components/client/Header/Header';
+import FirstSlide from '../../components/client/FirstSlide/FirstSlide';
 const Home = () => {
     const ProductList = [
         {
@@ -32,6 +33,7 @@ const Home = () => {
     return (
         <Client>
             <Header/>
+            <FirstSlide/>
             Home page
         </Client>
     )
